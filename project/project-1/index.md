@@ -1,11 +1,50 @@
-# Underwater Image Recovery
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Please note that this work is still **under peer-review**, submitted to "The Visual Computer" in May, 2021.
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Underwater Image Recovery | runjia0124.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Underwater Image Recovery" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://runjia0124.github.io/project/project-1/" />
 
-The [**manuscript**](https://runjia-rasisa.github.io/files/paper3.pdf) and [**codes**](https://github.com/runjia0124/GSR-learning-for-UIE) are available. 
+<meta property="og:url" content="https://runjia0124.github.io/project/project-1/" />
+<meta property="og:site_name" content="runjia0124.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Underwater Image Recovery" />
+<script type="application/ld+json">
+{"url":"https://runjia0124.github.io/project/project-1/","@type":"WebPage","headline":"Underwater Image Recovery","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-### Abstract
-Existing approaches treat the restoration process as a whole; thus, they cannot adequately handle the color distortion and low contrast in the enhanced images. In this paper, we
+    <link rel="stylesheet" href="/assets/css/style.css?v=eed18f29b86910df0b5b2ee93e40f27523f97a46">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="underwater-image-recovery">Underwater Image Recovery</h1>
+
+<p>Please note that this work is still <strong>under peer-review</strong>, submitted to “The Visual Computer” in May, 2021.</p>
+
+<p>The <a href="https://runjia-rasisa.github.io/files/paper3.pdf"><strong>manuscript</strong></a> and <a href="https://github.com/runjia0124/GSR-learning-for-UIE"><strong>codes</strong></a> are available.</p>
+
+<h3 id="abstract">Abstract</h3>
+<p>Existing approaches treat the restoration process as a whole; thus, they cannot adequately handle the color distortion and low contrast in the enhanced images. In this paper, we
 propose a global-local-guided model for realizing UIE tasks in a coarse-to-fine
 manner to alleviate these issues. The proposed model is divided into two paths.
 The global path targets to estimate basic structure and color information,
@@ -19,19 +58,27 @@ a certain degree. Qualitative and quantitative experimental results on various
 benchmarks demonstrate that our method can effectively tackle color distortion and blurred edges compared with several state-of-the-art methods by a
 large margin. Finally, we also conduct experiments to demonstrate that our
 method can be applied in various computer vision tasks, e.g., object detection,
-matching, and edge detection.
+matching, and edge detection.</p>
 
-This is the official implementation for "[Global Structure-guided Learning Framework for Underwater Image Enhancement](https://runjia-rasisa.github.io/files/paper3.pdf)".
+<p>This is the official implementation for “<a href="https://runjia-rasisa.github.io/files/paper3.pdf">Global Structure-guided Learning Framework for Underwater Image Enhancement</a>”.</p>
 
-### Overall Architecture
+<h3 id="overall-architecture">Overall Architecture</h3>
 
-![](https://raw.githubusercontent.com/runjia0124/GSR-learning/main/archive/pipeline.png)
+<p><img src="https://raw.githubusercontent.com/runjia0124/GSR-learning/main/archive/pipeline.png" alt="" /></p>
 
-### Representative Results
+<h3 id="representative-results">Representative Results</h3>
 
-![](https://raw.githubusercontent.com/runjia0124/GSR-learning/main/archive/display.png)
+<p><img src="https://raw.githubusercontent.com/runjia0124/GSR-learning/main/archive/display.png" alt="" /></p>
 
-### Reach me
+<h3 id="reach-me">Reach me</h3>
 
-E-mail: junko.lin@yahoo.com
+<p>E-mail: junko.lin@yahoo.com</p>
 
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
