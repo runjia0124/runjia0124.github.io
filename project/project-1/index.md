@@ -1,9 +1,4 @@
----
-title: "Underwater Image Recovery"
-excerpt: "<br/><img src='/images/display.png'>"
-collection: portfolio
----
-
+# Underwater Image Recovery
 
 Please note that this work is still **under peer-review**, submitted to "The Visual Computer" in May, 2021.
 
