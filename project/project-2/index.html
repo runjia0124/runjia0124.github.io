@@ -54,13 +54,13 @@
 <h3 id="training settings">Expermental Settings</h3>
 <h4 id="training settings">Datasets</h4>
 The infrared and visible image pairs we utilize to showcase the prevelege of our method are collected from the TNO and the RoadScene, which are publicly available. The above mentioned datasets are clarified below.
- <li>TNO dataset: The TNO is a widely used dataset for infrared and visible image fusion. We adopt TNO as the benchmark to train our network for its high quality images with distinctive scenarios.</li>
- <li>RoadScene dataset: The RoadScene includes realistic driving scenes (e.g., vehicles, pedestrains and raod symbol signs). It contains 221 representative image pairs with no uniform resolution, collected from authentic driving videos.</li>
+ <li>TNO dataset: &nbsp/&nbsp The TNO is a widely used dataset for infrared and visible image fusion. We adopt TNO as the benchmark to train our network for its high quality images with distinctive scenarios.</li>
+ <li>RoadScene dataset: &nbsp/&nbsp The RoadScene includes realistic driving scenes (e.g., vehicles, pedestrains and raod symbol signs). It contains 221 representative image pairs with no uniform resolution, collected from authentic driving videos.</li>
 <h4 id="training settings">Training details</h4>
 Our entire fusion framework is trained on the TNO dataset through two phases: training and finetuing. 
 In the traing stage, We first select 46 pairs of images and convert them to grayscale ones. To make full use of the gradient and entropy of each image in the proposed self-adaptive training, we crop 1410 patches of size 64*64 from them. Then, the training patches are normalized to [-1, 1] and fed into our network. We apply Adam as the optimizer and set the learning rate to 0.0001. The batch size is 10 and the epoch in this phase is 10.
 In the finetuning phase, we adopt 18 images with salient masks from TNO, and crop them into 1410 images of size 64*64 as we do in the training stage. For the contrastive learning, we use one positive sample with three negative samples (one corresponded with the positive patch and two ramdomly picked up from other negative patches). The network is finetuned for 5 epochs, the optimizer, learning rate and batch size settings are the same as that in the training phase. 
-The tuning parameter u of Eq. (x) is set to 20, the xx coefficients are 0.5 and 0.75 in both phases.
+.
 
 <h3 id="representative-results">Representative Results</h3>
 
