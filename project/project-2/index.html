@@ -36,7 +36,7 @@
     <div class="container-lg px-3 my-5 markdown-body">
       
       <h1>MACFuse: Multi-level Attention-guided Contrastive Learning for Infrared and Visible Image Fusion</h1>
-      
+
 
       <p>The  <a href="https://github.com/runjia0124/IVIF-Contrastive-Self-Adapative-Attention"><strong>codes</strong></a> are also available.</p>
 
@@ -51,6 +51,35 @@
 <div style="text-align: center;">
 <p><img src="./MACFuse.png" height="450" alt="" /></p>
 </div>
+
+<h3 id="overall-architecture">Loss Functions</h3>
+
+<h4 id="overall-architecture">Self-Adaptive Loss</h3>
+
+<p>Image fusion aims to provide an information-rich image with
+abundant details and sufficient intensities by combining complementary
+information of source images. The unsupervised learning problem is normally formulated to minimize the similarity
+of source images and the fused image. The loss function
+mainly consists of two parts, i.e., the structure similarity
+loss and the intensity similarity loss. </p>
+<p>
+The proposed self-adaptive loss can find proper coefficients based on Average Gradients(AG) and Entropy (EN), to balance the weights of infrared and visible images, which is normally hand-drafted in previous works. 
+Parameters for the structure similarity
+loss and the intensity similarity loss are normalized separately by Softmax function.
+
+</p>
+
+
+
+
+<h4 id="overall-architecture">Dual Contrastive Loss</h3>
+
+Under construction.
+
+
+
+
+
 <h3 id="training settings">Expermental Settings</h3>
 <h4 id="training settings">Datasets</h4>
 The infrared and visible image pairs we utilize to showcase the prevelege of our method are collected from the TNO and the RoadScene, which are publicly available. The above mentioned datasets are clarified below.
@@ -80,7 +109,7 @@ where (a) and (b) denote the feature map before and after attention, respectivel
 
 <p>This work is partially supported by the National Natural Science Foundation of China (Nos. 61922019, 61733002, 61672125, and 61772105),  LiaoNing Revitalization Talents Program (XLYC1807088), and the Fundamental Research Funds for the Central Universities.</p>
 
-      
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
