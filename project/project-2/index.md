@@ -11,6 +11,7 @@
 <meta property="og:title" content="Salient Target Based Infrared and Visible Image Fusion" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://runjia0124.github.io/project/project-2/" />
+
 <meta property="og:url" content="https://runjia0124.github.io/project/project-2/" />
 <meta property="og:site_name" content="runjia0124.github.io" />
 <meta name="twitter:card" content="summary" />
@@ -70,7 +71,6 @@
 
 <h4 id="overall-architecture">Self-Adaptive Loss</h4>
 
-
 Image fusion targets to provide an information-abundant image with
  sufficient details and satisfying intensities by combining favorable features of source images. In infrared and visible fusion tasks, we learn to minimize the similarity of source images and the fused image. The loss function is mainly composed of two parts, i.e., the structure similarity loss and the intensity similarity loss, which can be define as:
 $$
@@ -118,7 +118,8 @@ where $L$ denotes the grey level of the given image, $p_{x}$​ is the probabili
 
 
 
-<h4 id="overall-architecture">Dual Contrastive Learning</h3>
+<h4 id="overall-architecture">Dual Contrastive Learning</h4>
+
 
 Inspired by previous work on contrastive learning, we propose a contrastive regularization for fusion, based on two pairs of contrast, i.e., visible contrast and infrared contrast. Different from supervised learning with explicit guidance of reference images, there are no clear indications of positive and negative samples for image fusion. Hence, the core of applying contrastive learning lies in how to construct positive and negative pairs. In this letter, we argue that the desarible features served as contrast samples are included in source images. Concretely, for an infrared image, its salient infrared target is of interest while the rest part should be discarded. Similarly, in a visible image, the background with vivid textural details is highly demanded while the dark foreground part is less desirable.
 
