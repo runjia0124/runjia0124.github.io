@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
@@ -32,19 +32,19 @@
 <!-- end custom head snippets -->
 
 	<script type="text/x-mathjax-config"> 
-   		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
-   	</script>
-    <script type="text/x-mathjax-config">
-    	MathJax.Hub.Config({tex2jax: {
-             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-             processEscapes: true
-           }
-         });
-    </script>
-    
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-    </script>
-    
+		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {
+	         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	         processEscapes: true
+	       }
+	     });
+	</script>
+	
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+	</script>
+
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
@@ -68,7 +68,9 @@
 
 <h3 id="overall-architecture">Loss Functions</h3>
 
-<h4 id="overall-architecture">Self-Adaptive Loss</h3>
+<h4 id="overall-architecture">Self-Adaptive Loss</h4>
+
+
 Image fusion targets to provide an information-abundant image with
  sufficient details and satisfying intensities by combining favorable features of source images. In infrared and visible fusion tasks, we learn to minimize the similarity of source images and the fused image. The loss function is mainly composed of two parts, i.e., the structure similarity loss and the intensity similarity loss, which can be define as:
 $$
@@ -83,6 +85,7 @@ $$
  \end{eqnarray}
 $$
  where $\mathcal{S}(\cdot)$​​ denotes SSIM value. 
+
 
   $\mathcal{L_M}$ is adopted to strengthen the constraints on the differences of intensity distributions, formulated as:
 $$
@@ -141,9 +144,7 @@ $$
 
 \mathcal{L}_{vis} = \sum_{n=1}^{N}w_{i}\frac{\parallel{\nu}-{\nu}^{+}\parallel_{1}}{\sum_{m}^{M}\parallel{\nu}-{\nu}_{m}^{-}\parallel_{1}}
 
-\label{eq5}
-
-\end{equation} 
+\end{equation}
 $$
 where $\nu$ denotes the background part in the fused image, defined as $\nu={\rm I}_{F}\odot\mathcal{\overline M}$. $\nu^{+}$ and $\nu^{-}$ are the positive and negative samples, formulated as $\nu^{+}={\rm I}_{V}\odot\mathcal{\overline M}$, $\nu^{-}={\rm I}_{R}\odot\mathcal{\overline M}$, respectively.
 
