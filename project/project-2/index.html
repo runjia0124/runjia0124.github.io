@@ -16,9 +16,6 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Salient Target Based Infrared and Visible Image Fusion" />
 <script type="application/ld+json">
-
-<script src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 {"url":"https://runjia0124.github.io/project/project-2/","@type":"WebPage","headline":"Salient Target Based Infrared and Visible Image Fusion","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -33,6 +30,12 @@
 <!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
 
 <!-- end custom head snippets -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
 
   </head>
   <body>
@@ -77,9 +80,10 @@ loss and the intensity similarity loss are normalized separately by Softmax func
 
 <h4 id="overall-architecture">Dual Contrastive Loss</h3>
 
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+<div>
+\[ J_\alpha(x)=\sum_{m=0}^\infty \frac{(-1)^m}{m!\Gamma(m+\alpha+1)}{\left({\frac{x}{2}}\right)}^{2m+\alpha} \]
 
+</div>
 
 
 
