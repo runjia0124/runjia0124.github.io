@@ -135,7 +135,7 @@ $$
 $$
  where $\parallel\cdot\parallel_2^2$​ is Mean Square Error (MSE).
 
- In equation (4) and (5), $\sigma=\{\sigma^a, \sigma^b\}$​ and $\gamma=\{\gamma^a, \gamma^b\}$​ are two pairs of proportional weights which balance the proportion of the visible image and infrared image. They are empirically set to fixed values in normal methods. However, a fixed manner is incapable to make full use of the distinctive details. Therefore, our method takes the best advantage of data characteristics to achieve a self-adaptive loss function by optimizing the image-specific weights $\sigma$​ and $\gamma$​.
+ In equation (2) and (3), $\sigma=\{\sigma^a, \sigma^b\}$​ and $\gamma=\{\gamma^a, \gamma^b\}$​ are two pairs of proportional weights which balance the proportion of the visible image and infrared image. They are empirically set to fixed values in normal methods. However, a fixed manner is incapable to make full use of the distinctive details. Therefore, our method takes the best advantage of data characteristics to achieve a self-adaptive loss function by optimizing the image-specific weights $\sigma$​ and $\gamma$​.
 
 For one thing, we expect the fused image to retain more information (e.g., substantial details). Thus, Average Gradient (AG) is applied to optimize the weight parameter $\sigma$ by maximizing the value of the following equation:
 $$
