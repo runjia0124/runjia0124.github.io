@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>runjia0124.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="runjia0124.github.io" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://runjia0124.github.io/project/project-2/" />
+<meta property="og:url" content="https://runjia0124.github.io/project/project-2/" />
+<meta property="og:site_name" content="runjia0124.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="runjia0124.github.io" />
+<script type="application/ld+json">
+{"headline":"runjia0124.github.io","url":"https://runjia0124.github.io/project/project-2/","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=16b1aed942b137292cc0a235102c37c66358f1b2">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      
+
+      
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>MACFuse: Multi-level Attention-guided Contrastive Learning for Infrared and Visible Image Fusion | runjia0124.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Salient Target Based Infrared and Visible Image Fusion" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://runjia0124.github.io/project/project-2/" />
+
+<meta property="og:url" content="https://runjia0124.github.io/project/project-2/" />
+<meta property="og:site_name" content="runjia0124.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Salient Target Based Infrared and Visible Image Fusion" />
+<script type="application/ld+json">
+{"url":"https://runjia0124.github.io/project/project-2/","@type":"WebPage","headline":"Salient Target Based Infrared and Visible Image Fusion","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=e279e0dac67813c790cccc1b0f123be013373a23" />
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {
+	         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	         processEscapes: true
+	       }
+	     });
+	</script>
+	
+	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+	</script>
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1>MACFuse: Multi-level Attention-guided Contrastive Learning for Infrared and Visible Image Fusion</h1>
+
+
+      <p>The  <a href="https://github.com/runjia0124/IVIF-Contrastive-Self-Adapative-Attention"><strong>codes</strong></a> are also available.</p>
+
+<h3 id="contributions">Contributions</h3>
+<ul>
+  <li>The proposed dual attention strategy can obtain effective visible and infrared features to intensify the fusion of favorable features, by adopting global attention mechanism.</li>
+  <li>"To be available later."</li>
+  <li>To guide the optimization of our network, a self-adaptive loss is devised, which automatically adapts to the characteristics of source images in the training phase.</li>
+</ul>
+
+<h3 id="overall-architecture">Overall Architecture</h3>
+<div style="text-align: center;">
+<p>We will make these details public later.</p>
+</div>
+
+<h3 id="overall-architecture">Loss Functions</h3>
+
+<h4 id="overall-architecture">Self-Adaptive Loss</h4>
+
+<p>We will make these details public later.</p>
+<h4 id="overall-architecture">Dual Contrastive Learning</h4>
+
+
+<p>We will make these details public later.</p>
+
+<h3 id="training settings">Expermental Settings</h3>
+<h4 id="training settings">Datasets</h4>
+The infrared and visible image pairs we utilize to showcase the prevelege of our method are collected from the TNO and the RoadScene, which are publicly available. The above mentioned datasets are clarified below.
+ <li>TNO dataset: &amp;nbsp The TNO is a widely used dataset for infrared and visible image fusion. We adopt TNO as the benchmark to train our network for its high quality images with distinctive scenarios.</li>
+ <li>RoadScene dataset: &amp;nbsp The RoadScene includes realistic driving scenes (e.g., vehicles, pedestrains and raod symbol signs). It contains 221 representative image pairs with no uniform resolution, collected from authentic driving videos.</li>
+<h4 id="training settings">Training details</h4>
+Our entire fusion framework is trained on the TNO dataset through two phases: training and finetuing. 
+In the traing stage, We first select 46 pairs of images and convert them to grayscale ones. To make full use of the gradient and entropy of each image in the proposed self-adaptive training, we crop 1410 patches of size 64*64 from them. Then, the training patches are normalized to [-1, 1] and fed into our network. We apply Adam as the optimizer and set the learning rate to 0.0001. The batch size is 10 and the epoch in this phase is 10.
+In the finetuning phase, we adopt 18 images with salient masks from TNO, and crop them into 1410 images of size 64*64 as we do in the training stage. 
+
+<h3 id="representative-results">Representative Results</h3>
+<h4 id="representative-results">Qualitative Results</h4>
+<div style="text-align: center;">
+<p><img src="./fig1.png" height="550" style="display: inline-block;" alt="" /></p>
+</div>
+<div style="text-align: center;">
+<p><img src="./fusion_2.png" height="450" style="display: inline-block;" alt="" /></p>
+</div>
+<h4 id="Quantitative Results">Quantitative Results</h4>
+<div style="text-align: center;">
+<p><img src="./fusion.png" height="350" style="display: inline-block;" alt="" /></p>
+</div>
+<h3 id="Visualization">Visualization of the proposed attention module</h3>
+<div style="text-align: center;">
+<p><img src="./attention.png" height="350" style="display: inline-block;" alt="" /></p>
+</div>
+where (a) and (b) denote the feature map before and after attention, respectively. (c) denotes the final fused result. 
+
+<h3 id="reach-me">Reach me</h3>
+
+<p>E-mail: junko.lin@yahoo.com</p>
+
+<h3 id="reach-me">Acknowledgement</h3>
+
+<p>This work is partially supported by the National Natural Science Foundation of China (Nos. 61922019, 61733002, 61672125, and 61772105),  LiaoNing Revitalization Talents Program (XLYC1807088), and the Fundamental Research Funds for the Central Universities.</p>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
